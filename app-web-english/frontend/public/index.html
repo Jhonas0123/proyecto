@@ -19,7 +19,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
         <title>app web pronuncionacion</title>
-        <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
         <!--
         These two scripts have been added for the testing, please do not edit or remove them
         -->
@@ -31,10 +30,6 @@
         <script>
             // Only load visual edit scripts when inside an iframe and visual edits are enabled
             if (window.self !== window.top && '%REACT_APP_ENABLE_VISUAL_EDITS%' === 'true') {
-                // Load debug monitor script
-                var debugScript = document.createElement('script');
-                debugScript.src = 'https://assets.emergent.sh/scripts/debug-monitor.js';
-                document.head.appendChild(debugScript);
 
                 // Configure Tailwind
                 window.tailwind = window.tailwind || {};
@@ -63,7 +58,7 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
         <a
-            id="emergent-badge"
+            id="ubicacion"
             target="_blank"
             href="https://www.google.com/maps/place/Escuela+Agustin+Aspiazu/@-16.5075865,-68.1302419,19z/data=!4m10!1m2!2m1!1sagustin+aspiazu+colegio!3m6!1s0x915f21007714cfed:0x1ad9fa2a4de94b68!8m2!3d-16.5076222!4d-68.1294844!15sChdhZ3VzdGluIGFzcGlhenUgY29sZWdpb5IBF2VkdWNhdGlvbmFsX2luc3RpdHV0aW9uqgFXCggvbS8wNnpkahABKgsiB2NvbGVnaW8oDjIfEAEiG5gedPJ4QCqBhghCrgZK9qaJhUuppYdIC16FyTIbEAIiF2FndXN0aW4gYXNwaWF6dSBjb2xlZ2lv4AEA!16s%2Fg%2F11vxh9hz5v?entry=ttu&g_ep=EgoyMDI1MTExMS4wIKXMDSoASAFQAw%3D%3D"
             style="
